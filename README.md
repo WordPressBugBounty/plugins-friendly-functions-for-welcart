@@ -1,0 +1,1 @@
+# plugins-friendly-functions-for-welcart
