@@ -1,0 +1,403 @@
+.ffwSettingsSection {
+	padding: 80px 0;
+	margin-right: 16px;
+}
+
+.ffwSettingsSection .notice,
+.ffwSettingsSection div.error,
+.ffwSettingsSection div.updated {
+	margin: 0 0 40px;
+}
+
+.ffwSettingsSection div.saveMessage.updated {
+	margin: -32px 0 40px;
+}
+
+.ffwSettingsSection div.error {
+	border-left-color: orange;
+}
+
+.ffwGrayBackground {
+	background: rgba(0, 0, 0, 0.03);
+	border-radius: 3px;
+	padding: 24px 40px;
+}
+
+.ffwSettingsSection .form-table th {
+	width: 320px;
+}
+
+.ffwSettingsSection form {
+	margin-bottom: 24px;
+}
+
+.ffwSettingsSection .description {
+	margin-bottom: 24px;
+}
+
+.ffwSettingsSection .tableWrap {
+	border-bottom: 2px dotted rgba(0, 0, 0, 0.15);
+	padding-bottom: 40px;
+	margin-bottom: 24px;
+}
+
+.ffwSettingsSection .tableWrap:last-of-type {
+	border-bottom: none;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.ffwSettingsSection h3 {
+	display: inline-block;
+	font-size: 16px;
+	margin-bottom: 0;
+}
+
+.ffwSettingsSection h3::after {
+	content: "：";
+	display: inline-block;
+}
+
+.ffwSettingsSection .plugin-card h3::after {
+	content: unset;
+}
+
+.shippingDiscountsAWrap,
+.shippingDiscountsBWrap,
+.purchaseDiscountsAWrap,
+.purchaseDiscountsBWrap,
+.uplodedButtonWrap,
+#itemGpExpMarkThumbnail,
+#pdfSignImageThumbnail {
+	display: inline-block;
+}
+
+.purchaseDiscountsWrap:not(:last-of-type){
+	margin-bottom: 8px;
+}
+
+.ffwUploadImg {
+	max-height: 32px;
+	max-width: 32px;
+	width: auto;
+	height: auto;
+	vertical-align: top;
+	border-radius: 5px;
+	border: 1px solid #8c8f94;
+	padding: 8px;
+	margin: -14px 0 4px 16px;
+	background: #fff;
+}
+
+.ffwSmallTextInput {
+	width: 10em;
+}
+
+select[name="couponDiscountsUnit"] {
+	vertical-align: baseline;
+}
+
+input[name="shippingDiscountsA"],
+input.purchaseDiscountsA {
+	margin-right: 8px;
+}
+
+input[name="shippingDiscountsB"],
+input.purchaseDiscountsB {
+	margin-right: 8px;
+	margin-left: 8px;
+}
+
+textarea[name="conversionTag"] {
+	max-width: 480px;
+	height: 120px;
+	width: 100%;
+}
+
+.upArrow,
+.downArrow,
+.noChangeArrow{
+	margin-left: 8px;
+}
+
+.upArrow,
+.downArrow{
+	width: 10px;
+	height: 10px;
+}
+
+.noChangeArrow{
+	width: 11px;
+	height: 11px;
+}
+
+.upArrow > path{
+	fill: #f00c;
+}
+
+.downArrow > path{
+	fill: #13afec;
+}
+
+.noChangeArrow > path{
+	fill: #ecc700;
+}
+
+.contentsListItem {
+	background-color: #fff;
+	border: 1px solid #dcdcde;
+	box-sizing: border-box;
+	margin-bottom: 2.5%;
+}
+
+.ffwSettingsSection .contentsListItem h3{
+	margin-bottom: 0;
+}
+
+.textalignCenter{
+	text-align: center;	
+}
+
+.width5P {
+	width: 5%;
+}
+
+.width22_5P {
+	width: 22.50%;
+}
+
+.width30P {
+	width: 30%;
+}
+
+.width72_5P {
+	width: 72.5%;
+}
+
+.width100P {
+	width: 100%;
+	height: auto;
+}
+
+.marginRight8 {
+	margin-right: 8px;
+}
+
+.marginBottom8 {
+	margin-bottom: 8px;
+}
+
+.marginBottom16 {
+	margin-bottom: 16px;
+}
+
+.marginBottom24 {
+	margin-bottom: 24px;
+}
+
+.displayBlock {
+	display: block;
+}
+
+.displayNone {
+	display: none;
+}
+
+.flex {
+	display: flex;
+	display: -webkit-flex;
+}
+
+.flexBetween {
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+}
+
+.flexCenterColumn {
+	align-items: center;
+	-webkit-align-items: center;
+}
+
+.flexStartWrap {
+	justify-content: flex-start;
+	-webkit-justify-content: flex-start;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+
+.flexEndWrap {
+	justify-content: flex-end;
+	-webkit-justify-content: flex-end;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+}
+
+.cursorPointer {
+	cursor: pointer;
+}
+
+.overflowHidden{
+	overflow: hidden
+}
+
+
+/* 1280px */
+
+@media screen and (max-width: 1280px) {
+	.shippingDiscountsAWrap,
+	.shippingDiscountsBWrap,
+	.purchaseDiscountsAWrap,
+	.purchaseDiscountsBWrap,
+	.uplodedButtonWrap {
+		display: block;
+	}
+	.shippingDiscountsAWrap,
+	.purchaseDiscountsAWrap {
+		margin-bottom: 8px;
+	}
+	.purchaseDiscountsWrap {
+		padding-bottom: 8px;
+		border-bottom: 2px dotted rgba(0, 0, 0, 0.15);
+	}
+	input[name="shippingDiscountsB"],
+	input.purchaseDiscountsB {
+		margin-left: 0;
+	}
+	.uplodedButtonWrap {
+		margin-top: 24px;
+	}
+}
+
+
+/* 782px */
+
+@media screen and (max-width: 782px) {
+	.ffwSettingsSection {
+		margin-right: 8px;
+	}
+	.form-table input.regular-text.ffwSmallTextInput {
+		width: 10em;
+	}
+	.form-table td select[name="couponDiscountsUnit"] {
+		width: auto;
+	}
+}
+
+
+/* タブ切り替え */
+
+input[name="tab_settings"],
+.tabs input[type="radio"]+label::before,
+.tabs input[type="radio"]:checked+label::after {
+	display: none;
+}
+
+.tabs input[type="radio"]+.tab_settings label {
+	font-size: 14px;
+	text-align: center;
+	display: block;
+	font-weight: normal;
+	transition: all 0.2s ease;
+	padding: 4px 0 4px 1px;
+	width: 100%;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+.tabs input[type="radio"]+.tab_settings {
+	width: 20%;
+	width: calc(100% / 5);
+	float: left;
+}
+
+.tabLabel {
+	color: #0272aa;
+	font-weight: bold;
+	background: transparent;
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.04);
+	padding: 8px 16px;
+	border-top: 4px solid transparent;
+	font-size: 14px;
+	display: inline-block;
+}
+
+input[type="radio"]:checked+label .tabLabel {
+	background: #fff;
+	border-top-color: #0272aa;
+	cursor: default;
+}
+
+input[type="radio"]+label .tabLabel:hover {
+	color: #135e96;
+}
+
+input[type="radio"]:checked+label .tabLabel:hover {
+	color: #0272aa;
+}
+
+.tab_content {
+	display: none;
+	clear: both;
+	overflow: hidden;
+	background: #fff;
+	width: 100%;
+	padding: 16px 24px;
+	box-sizing: border-box;
+}
+
+#settingsTab1:checked~#settings1,
+#settingsTab2:checked~#settings2,
+#settingsTab3:checked~#settings3,
+#settingsTab4:checked~#settings4 {
+	display: block;
+}
+
+/* NEW TAG */
+.ffwSettingsSection label:nth-of-type(1) span::before,
+.ffwSettingsSection label:nth-of-type(3) span::before,
+.ffwSettingsSection #settings1 .form-table tr:nth-of-type(17) th::before,
+.ffwGrayBackground:nth-of-type(3) .contentsListItem:nth-of-type(1) h3::before {
+    content: 'NEW';
+    display: inline-block;
+    font-size: 10px;
+    margin-right: 8px;
+    background: #0272aa;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+/* COLUMN */
+.colWrap {
+	margin-left: -1.25%;
+	margin-right: -1.25%;
+	width: calc(100% + 2.5%);
+}
+
+.col3to1,
+.col3to2 {
+	margin-left: 1.25%;
+	margin-right: 1.25%;
+}
+
+.col3to1,
+.col3to2 {
+	width: calc(100% / 3 - 2.5%);
+}
+
+/* 1720px */
+@media screen and (max-width: 1720px) {
+	.col3to1,
+	.col3to2 {
+		width: calc(100% / 2 - 2.5%);
+	}
+}
+
+/* 1120px */
+@media screen and (max-width: 1120px) {
+	.col3to1 {
+		width: calc(100% / 1 - 2.5%);
+	}
+}
