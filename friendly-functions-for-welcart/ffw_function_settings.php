@@ -54,7 +54,11 @@ update_option('friendlyFunctionsForWelcartData',$friendlyFunctionsForWelcartData
 
 //設定保存時のメッセージ
 if(isset($_POST['submit_settings'])){
-	$saveMessage = '<div class="saveMessage updated"><p>'.sprintf(esc_html__('%s saved.', MAINICHI_WEB_THIS_PLUGIN_NAME), $_POST['submit_settings']).'</p></div>'; // ～を保存しました。
+	//Nonceチェック
+	if(!check_admin_referer('ffw_settings_nonce')){
+        wp_die(__('Security check failed', 'text-domain'));
+    }
+	$saveMessage = '<div class="saveMessage updated"><p>'.sprintf(esc_html__('%s saved.', MAINICHI_WEB_THIS_PLUGIN_NAME), sanitize_text_field($_POST['submit_settings'])).'</p></div>'; // ～を保存しました。
 }
 ?>
 
@@ -71,6 +75,7 @@ if(isset($_POST['submit_settings'])){
 
 	<div id="settings1" class="tab_content">
 		<form class="settingsForm1" method="post" action="admin.php?page=ffw_function_settings">
+			<?php wp_nonce_field('ffw_settings_nonce'); //Nonceフィールド ?>
 			<div class="ffwGrayBackground">
 				<table class="form-table">
 					<tr valign="top">
@@ -249,6 +254,7 @@ if(isset($_POST['submit_settings'])){
 
 	<div id="settings2" class="tab_content">
 		<form class="settingsForm2" method="post" action="admin.php?page=ffw_function_settings">
+			<?php wp_nonce_field('ffw_settings_nonce'); //Nonceフィールド ?>
 			<div class="ffwGrayBackground">
 				<table class="form-table">
 					<tr valign="top">

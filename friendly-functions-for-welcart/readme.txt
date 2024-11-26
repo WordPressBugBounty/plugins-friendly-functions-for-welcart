@@ -3,8 +3,8 @@ Contributors: mainichiweb
 Donate link:
 Tags: welcart,product
 Requires at least: 5.0
-Tested up to: 6.6
-Stable tag: 1.2.4
+Tested up to: 6.7
+Stable tag: 1.2.5
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -115,6 +115,9 @@ Bug fixes in "Change the sender of the order email to the purchaser's address".
 
 1.2.4
 WP6.6 support & Deleted function.
+
+1.2.5
+WP6.7 support & Security maintenance.
 
 == Upgrade notice ==
 

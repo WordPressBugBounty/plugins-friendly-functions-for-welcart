@@ -24,8 +24,8 @@ if (is_plugin_active('usc-e-shop/usc-e-shop.php')) {
 	if(!empty($changeOrderEmail) && $changeOrderEmail == 'yes'){
 		function friendly_functions_for_welcart_order_return_path_change($order_para, $entry, $data)
 		{
-			$order_para['customer_mailaddress'] = $entry['customer']['mailaddress1'];
-			$order_para['customer_name'] = $entry['customer']['name1'].' '.$entry['customer']['name2'];
+			$order_para['customer_mailaddress'] = $entry['customer']['mailaddress1'];	
+			$order_para['customer_name'] = $entry['customer']['name1'].' '.$entry['customer']['name2'];			
 
 			return $order_para;
 		}
@@ -582,7 +582,7 @@ if (is_plugin_active('usc-e-shop/usc-e-shop.php')) {
 			header("Cache-Control: private, no-store, no-cache, must-revalidate, max-age=0");
 			header("Pragma: no-cache");
 			header("Expires: Thu, 01 Jan 1970 00:00:00 GMT");
-			header("Last-Modified: ".gmdate("D, d M Y H:i:s")." GMT");
+			header("Last-Modified: ".gmdate("D, d M Y H:i:s")." GMT"); 
 		}
 		add_action('send_headers', 'friendly_functions_for_welcart_add_header_session');
 	}
