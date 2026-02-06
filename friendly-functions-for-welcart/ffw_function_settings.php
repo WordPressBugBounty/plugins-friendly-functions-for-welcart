@@ -9,6 +9,12 @@ if(!defined('ABSPATH')) exit;
 include_once(ABSPATH . 'wp-admin/includes/plugin.php');
 if (is_plugin_active('usc-e-shop/usc-e-shop.php')):
 
+//Nonceチェック
+if(
+	isset($_POST['submit_settings']) &&
+	!check_admin_referer('ffw_settings_nonce')
+) wp_die(__('Security check failed', 'text-domain'));
+
 /* 設定情報 */
 //取得
 $friendlyFunctionsForWelcartData = get_option('friendlyFunctionsForWelcartData');
@@ -54,10 +60,6 @@ update_option('friendlyFunctionsForWelcartData',$friendlyFunctionsForWelcartData
 
 //設定保存時のメッセージ
 if(isset($_POST['submit_settings'])){
-	//Nonceチェック
-	if(!check_admin_referer('ffw_settings_nonce')){
-        wp_die(__('Security check failed', 'text-domain'));
-    }
 	$saveMessage = '<div class="saveMessage updated"><p>'.sprintf(esc_html__('%s saved.', MAINICHI_WEB_THIS_PLUGIN_NAME), sanitize_text_field($_POST['submit_settings'])).'</p></div>'; // ～を保存しました。
 }
 ?>
